@@ -1,3 +1,21 @@
+# Open Source Air Quality sensor project
+# MIT license; Copyright (c) 2019 Daniel Near (dan.e.near@gmail.com)
+# Version 0.1 beta (2019/02/17)
+#
+# This code developed to run on Pycom LoPy4
+# This version works with several Adafruit sensor PCBS
+# si7021 temp/humidity
+# TSL2591 Ambient and IR Light sensor
+# Note Adafruit sensors need both Vin and 3v0 pins tied together to 3v3 or they won't have clean signals
+# I used a 1.6k Pullup resistor each on SDA and SCL to 3v3
+# Libraries for these devices were collected online and modified
+# to work with Pycom's Micropython variant
+# abpkeys.py was included for code legibility but is zeroed out.  Don't publish your private keys!
+# to get keys for these three values, register with TheThingsNetwork, create an application
+# and add a unique device for each Pycom assembly you build. 
+# Configure that device to connect via ABP.
+# You will need to be near a LoRaWAN Gateway or purchase your own
+ 
 # main.py -- put your code here!
 from network import LoRa
 import socket
